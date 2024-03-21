@@ -6,7 +6,9 @@ const get = async (req, res, next) => {
 	try {
 		const users = [];
 
-		res.json(users);
+		res.json({
+			data: users
+		});
 		next();
 	}
 	catch (error) {
@@ -14,6 +16,4 @@ const get = async (req, res, next) => {
 	}
 }
 
-module.exports = {
-    get
-};
+export default { get };

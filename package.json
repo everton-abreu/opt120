@@ -2,10 +2,10 @@
   "name": "opt102",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node index --predix src",
-    "serve": "nodemon index --prefix src",
+    "start": "node index --predix dist",
+    "serve": "nodemon --exec 'ts-node' src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +17,8 @@
     "prisma": "^5.11.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
   }
 }
