@@ -1,0 +1,22 @@
+{
+  "name": "opt102",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index --predix src",
+    "serve": "nodemon index --prefix src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.1",
+    "mysql": "^2.18.1",
+    "prisma": "^5.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
