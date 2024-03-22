@@ -1,10 +1,10 @@
-const { Dev } = require('../../models');
+import { PrismaClient, User } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 const get = async (req, res, next) => {
-	const { user } = req.headers;
-	
 	try {
-		const users = [];
+		const users: User[] = await prisma.user.findMany();
 
 		res.json({
 			data: users
