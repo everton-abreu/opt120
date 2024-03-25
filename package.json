@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "node index --predix dist",
+    "dev": "nodemon --exec 'ts-node' src/index.ts",
     "serve": "nodemon --exec 'ts-node' src/index.ts",
     "migrate": "npx prisma migrate dev --name init",
     "seeds": "npx ts-node prisma/seeds.ts",
