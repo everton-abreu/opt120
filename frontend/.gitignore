@@ -1,4 +1,4 @@
 /build
-.dart_tool/chrome-device/
+.dart_tool/
 
 android/local.properties
